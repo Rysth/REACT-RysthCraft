@@ -23,6 +23,10 @@ body {
   height: 100%;
 }
 
+body {
+  font-family: var(--FF-poppins);
+}
+
 img,
 iframe,
 video,
@@ -45,15 +49,21 @@ select {
 /* NavLinks */
 
 .active {
-  @apply bg-black text-white;
+  @apply bg-[var(--CL-primary-blue-darker)] text-white;
+}
+
+@media (min-width: 768px) {
+  .active {
+    @apply bg-transparent border-b-2;
+  }
 }
 
 /* Button Styles */
 
 .btn {
-  @apply p-3 text-xs md:text-sm rounded-lg text-white;
+  @apply py-3 text-xs md:text-sm rounded-lg text-white;
 }
 
 .btn-neutral {
-  @apply border border-gray-400 text-gray-100 md:hover:bg-white md:hover:text-black transition duration-150;
+  @apply px-3 border border-white text-white md:hover:bg-white md:hover:text-black transition duration-150;
 }
