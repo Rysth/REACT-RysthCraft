@@ -1,0 +1,43 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --CL-primary-purple: #9b51e0;
+  --CL-primary-blue: #3081ed;
+  --CL-primary-blue-dark: #2e3191;
+  --CL-primary-blue-darker: #2a2977;
+
+  --FF-poppins: 'Poppins', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+iframe,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+label,
+select {
+  font-family: var(--FF-poppins);
+}
