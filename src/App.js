@@ -1,10 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
-    <div className="app">
-      <div className="text-center bg-black text-white text-4xl">Hello World!</div>
-    </div>
+    <BrowserRouter>
+      <div>
+        <NavBar />
+        <Routes>
+          <Route path="/" element="Hi" />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

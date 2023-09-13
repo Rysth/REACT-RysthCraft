@@ -41,3 +41,19 @@ label,
 select {
   font-family: var(--FF-poppins);
 }
+
+/* NavLinks */
+
+.active {
+  @apply bg-black text-white;
+}
+
+/* Button Styles */
+
+.btn {
+  @apply p-3 text-xs md:text-sm rounded-lg text-white;
+}
+
+.btn-neutral {
+  @apply border border-gray-400 text-gray-100 md:hover:bg-white md:hover:text-black transition duration-150;
+}
