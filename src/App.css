@@ -6,6 +6,7 @@
 
 :root {
   --CL-primary-purple: #9b51e0;
+  --CL-primary-pink: #fb37ff;
   --CL-primary-blue: #3081ed;
   --CL-primary-blue-dark: #2e3191;
   --CL-primary-blue-darker: #2a2977;
@@ -63,9 +64,17 @@ select {
 /* Button Styles */
 
 .btn {
-  @apply py-3 text-xs md:text-sm rounded-lg text-white;
+  @apply py-3 text-xs md:text-sm rounded-lg text-white  md:hover:text-black transition duration-150 text-center;
 }
 
 .btn-neutral {
-  @apply px-3 border border-white text-white md:hover:bg-white md:hover:text-black transition duration-150;
+  @apply px-3 border border-white text-white md:hover:bg-white;
+}
+
+.btn-primary {
+  @apply w-32 md:w-40 bg-gradient-to-r from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] md:text-lg md:hover:from-white md:hover:to-white;
+}
+
+.btn-secondary {
+  @apply w-32 md:w-40 md:text-lg border border-white text-white md:hover:bg-white;
 }
