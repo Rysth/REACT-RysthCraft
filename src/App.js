@@ -8,7 +8,9 @@ function App() {
       <div>
         <NavBar />
         <Routes>
-          <Route path="/" element="Hi" />
+          <Route path="/" element="Home" />
+          <Route path="/about" element="About" />
+          <Route path="/projects" element="Projects" />
         </Routes>
       </div>
     </BrowserRouter>
