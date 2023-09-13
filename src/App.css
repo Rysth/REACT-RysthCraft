@@ -9,6 +9,7 @@
   --CL-primary-blue: #3081ed;
   --CL-primary-blue-dark: #2e3191;
   --CL-primary-blue-darker: #2a2977;
+  --CL-primary-dark: #1f1d2b;
   --FF-poppins: 'Poppins', sans-serif;
 }
 
@@ -25,6 +26,7 @@ body {
 
 body {
   font-family: var(--FF-poppins);
+  background-color: var(--CL-primary-dark);
 }
 
 img,
@@ -49,12 +51,12 @@ select {
 /* NavLinks */
 
 .active {
-  @apply bg-[var(--CL-primary-blue-darker)] text-white;
+  @apply bg-[var(--CL-primary-dark)] text-white;
 }
 
 @media (min-width: 768px) {
   .active {
-    @apply bg-transparent border-b-2;
+    @apply border-b-2 bg-clip-text bg-gradient-to-r from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] text-transparent brightness-125 font-extrabold;
   }
 }
 

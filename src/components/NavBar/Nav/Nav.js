@@ -10,7 +10,7 @@ function Nav({ variant, handleNavMenu }) {
       id: 'desktop',
       navClassList: 'hidden flex-1 justify-center md:flex text-white gap-5',
       navLinkClassList:
-        'text-sm p-2 rounded-md md:hover:scale-110 transition-transform duration-150',
+        'text-sm p-2 rounded-md md:hover:scale-110 transition-transform duration-150 uppercase font-bold',
     },
     {
       id: 'mobile',

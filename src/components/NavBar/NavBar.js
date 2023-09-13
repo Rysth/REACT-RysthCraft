@@ -15,9 +15,8 @@ function NavBar() {
       initial={{ y: -200 }}
       animate={{ y: 0 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
-      className="bg-[var(--CL-primary-blue-dark)]"
     >
-      <div className="sticky container max-w-[1240px] mx-auto px-4 py-2 md:py-4 flex flex-wrap justify-between items-center">
+      <div className="sticky container max-w-[1300px] mx-auto px-4 py-2 md:py-6 flex flex-wrap justify-between items-center">
         <Link to="/">
           <img className="w-24 lg:w-32" src={BrandLogo} alt="" />
         </Link>
