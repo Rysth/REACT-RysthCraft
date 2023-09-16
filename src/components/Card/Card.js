@@ -12,16 +12,20 @@ function Card(
   },
 ) {
   return (
-    <div className="rounded-xl">
-      <picture>
-        <img className="w-full rounded-xl" src={imageSource} alt="" />
-      </picture>
-      <div className="flex justify-between text-base my-4">
-        <p className="font-bold">{title}</p>
+    <div className="w-full">
+      <a href={previewLink} target="_blank" rel="noopener noreferrer">
+        <img
+          className="rounded-xl transition-transform md:hover:-translate-y-3 "
+          src={imageSource}
+          alt={title}
+        />
+      </a>
+      <div className="flex justify-between md:text-base my-3">
+        <p className="font-bold truncate max-w-[12rem]">{title}</p>
         <p className="font-bold uppercase">{technology}</p>
       </div>
-      <hr className="my-2" />
-      <ul className="py-3 grid gap-2">
+      <hr className="my-2 h-[1px] border-none bg-gray-500" />
+      <ul className="py-2 grid gap-2">
         <li className="flex justify-between items-center text-xs">
           <p>
             <i className="fa-solid fa-star w-3 mr-2" />

@@ -1,15 +1,22 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import Card from '../../../../components/Card/Card';
+import Subtitle from '../../../../components/Subtitle/Subtitle';
 import projectsData from '../../../../utils/ProjectData';
 
 function FeatureSection() {
   return (
-    <div className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28">
-      <header className="mb-10">
-        <h2 className="text-xl md:text-2xl lg:text-3xl text-center md:text-left font-bold">
-          Featured Projects
-        </h2>
-      </header>
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1.5,
+        delay: 1,
+        type: 'spring',
+      }}
+      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28"
+    >
+      <Subtitle text="Featured Projects" />
       <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-10">
         {projectsData.map((project) => (
           <Card
@@ -22,7 +29,7 @@ function FeatureSection() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
