@@ -54,7 +54,7 @@ function HeroSection() {
             repeat: Infinity,
             repeatType: 'mirror',
           }}
-          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] "
+          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)]"
         >
           <motion.div
             initial={{ opacity: 0.2 }}

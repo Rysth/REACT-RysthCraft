@@ -64,7 +64,7 @@ select {
 /* Button Styles */
 
 .btn {
-  @apply py-3 text-xs md:text-sm rounded-lg text-white  md:hover:text-black transition duration-150 text-center;
+  @apply py-3 text-xs md:text-sm rounded-lg text-white  md:hover:text-black transition duration-150 text-center active:scale-90;
 }
 
 .btn-neutral {
@@ -77,4 +77,8 @@ select {
 
 .btn-secondary {
   @apply w-32 md:w-40 md:text-lg border border-white text-white md:hover:bg-white;
+}
+
+.btn-badge {
+  @apply p-2 md:text-xs w-24 text-white md:hover:bg-white;
 }
