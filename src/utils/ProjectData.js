@@ -27,14 +27,6 @@ const projectsData = [
     previewLink: 'https://react-rysthcraft.onrender.com/',
     gitHublink: 'https://github.com/Rysth/REACT-RysthCraft',
   },
-  {
-    id: '4',
-    title: 'RysthCraft',
-    technology: 'React',
-    imageSource: Project3,
-    previewLink: 'https://react-rysthcraft.onrender.com/',
-    gitHublink: 'https://github.com/Rysth/REACT-RysthCraft',
-  },
 ];
 
 export default projectsData;
