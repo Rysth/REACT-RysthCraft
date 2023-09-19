@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 
 function Service({ icon, text }) {
   return (
-    <div className="grid gap-3">
-      <motion.div className="w-28 h-28 grid place-items-center rounded-2xl mx-auto bg-violet-700 bg-opacity-25  transition duration-200 cursor-pointer lg:hover:scale-110 lg:hover:bg-opacity-100">
+    <div className="grid gap-3 transition duration-200 cursor-pointer lg:hover:scale-110 ">
+      <motion.div className="grid mx-auto bg-opacity-25 w-28 h-28 place-items-center rounded-2xl bg-violet-700 ">
         <i className={`fa-solid ${icon} text-4xl`} />
       </motion.div>
-      <p className="text-xs lg:text-base text-center">{text}</p>
+      <p className="text-xs text-center lg:text-base">{text}</p>
     </div>
   );
 }
