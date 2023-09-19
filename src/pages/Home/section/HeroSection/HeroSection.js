@@ -12,13 +12,13 @@ function HeroSection() {
         delay: 1,
         type: 'spring',
       }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28 grid lg:grid-cols-2 gap-2 lg:gap-8"
+      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28 grid lg:grid-cols-2 items-center gap-2 lg:gap-8"
     >
       <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
         <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:leading-none">
           Elevating User Journeys through React Development Expertise
         </h2>
-        <p className="my-5 text-xs sm:text-basetext-gray-400 lg:text-xl">
+        <p className="my-5 text-xs sm:text-base text-gray-300 lg:text-xl">
           Welcome to RysthCraft&apos;s Portfolio. I&apos;m John Palacios, a React Developer. Explore
           my web projects here.
         </p>
@@ -45,7 +45,7 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="grid place-items-center mt-10 lg:mt-0">
+      <div className="grid place-items-center lg:place-items-end  mt-10 lg:mt-0">
         <motion.div
           initial={{ backgroundColor: '#3081ed', scale: 0.95 }}
           animate={{ backgroundColor: '#fb37ff', scale: 1 }}
@@ -54,7 +54,7 @@ function HeroSection() {
             repeat: Infinity,
             repeatType: 'mirror',
           }}
-          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)]"
+          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[21rem] lg:w-[32rem]"
         >
           <motion.div
             initial={{ opacity: 0.2 }}
@@ -66,7 +66,7 @@ function HeroSection() {
             }}
             className="absolute w-[10rem] h-[10rem] rounded-full bg-[var(--CL-primary-pink)] -top-0 -left-0 lg:-top-16 lg:-left-16 blur-3xl z-10"
           />
-          <img className="w-72 lg:w-96 rounded-2xl z-50 relative" src={HeroImage} alt="" />
+          <img className="w-[100%] rounded-2xl z-50 relative" src={HeroImage} alt="" />
           <motion.div
             initial={{ opacity: 0.2 }}
             animate={{ opacity: 0.4 }}
