@@ -45,8 +45,8 @@ function ServicesSection() {
         </p>
       </div>
       <div className="relative">
-        <hr className="h-10 bg-gradient-to-tr from-[var(--CL-primary-blue)] via-transparent to-[var(--CL-primary-purple)] absolute top-2/4 lg:top-6/6 w-full z-40 blur-3xl" />
-        <div className="z-50 grid grid-cols-2 gap-12 mt-16 md:grid-cols-4 lg:gap-0">
+        <hr className="h-20 bg-gradient-to-bl from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] absolute top-2/4 lg:top-6 w-full z-40 blur-3xl opacity-30" />
+        <div className="relative z-50 grid grid-cols-2 gap-12 mt-16 md:grid-cols-4 lg:gap-10">
           {servicesData.map((service) => (
             <Service key={service.id} icon={service.icon} text={service.text} />
           ))}
