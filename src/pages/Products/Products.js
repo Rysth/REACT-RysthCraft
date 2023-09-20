@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Card from '../../components/Card/Card';
 import Subtitle from '../../components/Subtitle/Subtitle';
 import projectsData from '../../utils/ProjectData';
@@ -26,7 +27,16 @@ function Products() {
   };
 
   return (
-    <div className="text-white">
+    <motion.div
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1.5,
+        delay: 1,
+        type: 'spring',
+      }}
+      className="text-white"
+    >
       <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
         <div className="flex flex-col items-center justify-between gap-3 mb-10 md:flex-row">
           <Subtitle text="My Projects" />
@@ -56,7 +66,7 @@ function Products() {
           <Missing />
         )}
       </div>
-    </div>
+    </motion.div>
   );
 }
 
