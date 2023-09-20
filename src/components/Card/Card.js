@@ -15,41 +15,41 @@ function Card(
     <div className="w-full">
       <a href={previewLink} target="_blank" rel="noopener noreferrer">
         <img
-          className="rounded-xl transition-transform md:hover:-translate-y-3 "
+          className="object-cover object-center transition-transform rounded-xl md:hover:-translate-y-3 "
           src={imageSource}
           alt={title}
         />
       </a>
-      <div className="flex justify-between md:text-base my-3">
+      <div className="flex justify-between my-3 md:text-base">
         <p className="font-bold truncate max-w-[12rem]">{title}</p>
         <p className="font-bold uppercase">{technology}</p>
       </div>
       <hr className="my-2 h-[1px] border-none bg-gray-500" />
-      <ul className="py-2 grid gap-2">
-        <li className="flex justify-between items-center text-xs">
+      <ul className="grid gap-2 py-2">
+        <li className="flex items-center justify-between text-xs">
           <p>
-            <i className="fa-solid fa-star w-3 mr-2" />
+            <i className="w-3 mr-2 fa-solid fa-star" />
             Live Preview
           </p>
           <a
             href={previewLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-primary btn-badge border"
+            className="border btn btn-primary btn-badge"
           >
             Watch
           </a>
         </li>
-        <li className="flex justify-between items-center text-xs">
+        <li className="flex items-center justify-between text-xs">
           <p>
-            <i className="fa-brands fa-github w-3 mr-2" />
+            <i className="w-3 mr-2 fa-brands fa-github" />
             GitHub
           </p>
           <a
             href={gitHubLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-badge border"
+            className="border btn btn-badge"
           >
             Watch
           </a>
