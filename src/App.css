@@ -49,6 +49,22 @@ select {
   font-family: var(--FF-poppins);
 }
 
+/* Scrollbar */
+
+/* For Webkit-based browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white; /* Color of the scrollbar thumb */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--CL-primary-blue-dark); /* Color of the thumb on hover */
+}
+
 /* NavLinks */
 
 .active {
@@ -64,11 +80,11 @@ select {
 /* Button Styles */
 
 .btn {
-  @apply py-3 text-xs md:text-sm rounded-lg text-white  md:hover:text-black transition duration-150 text-center active:scale-90;
+  @apply py-3 text-xs text-center text-white transition duration-150 rounded-lg md:text-sm md:hover:text-black active:scale-90;
 }
 
 .btn-neutral {
-  @apply px-3 border border-white text-white md:hover:bg-white;
+  @apply px-3 text-white border border-white md:hover:bg-white;
 }
 
 .btn-primary {
@@ -76,9 +92,9 @@ select {
 }
 
 .btn-secondary {
-  @apply w-32 md:w-40 md:text-lg border border-white text-white md:hover:bg-white;
+  @apply w-32 text-white border border-white md:w-40 md:text-lg md:hover:bg-white;
 }
 
 .btn-badge {
-  @apply p-2 md:text-xs w-24 text-white md:hover:bg-white;
+  @apply w-24 p-2 text-white md:text-xs md:hover:bg-white;
 }

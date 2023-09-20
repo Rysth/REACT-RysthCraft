@@ -1,12 +1,22 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import BannerImage from '../../assets/PNG/banner.png';
 import ProfileImage from '../../assets/PNG/profile.jpeg';
 
 function About() {
   return (
-    <section className="text-gray-300 body-font">
+    <motion.section
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1.5,
+        delay: 1,
+        type: 'spring',
+      }}
+      className="text-gray-300 body-font"
+    >
       <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
-        <div className="mx-auto lg:w-3/4">
+        <div className="w-3/4 mx-auto">
           <div className="overflow-hidden rounded-lg h-50">
             <img alt="content" className="object-center h-full" src={BannerImage} />
           </div>
@@ -29,7 +39,7 @@ function About() {
               </div>
             </div>
             <div className="pt-4 mt-4 text-center border-t border-gray-200 sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
-              <p className="mb-4 text-base leading-relaxed lg:text-lg">
+              <p className="mb-4 text-sm leading-relaxed lg:text-lg">
                 I&apos;m John Palacios, known as RysthCraft, a passionate software developer
                 specializing in creating websites and applications using
                 <span className="font-bold">
@@ -42,14 +52,21 @@ function About() {
                 stunning visuals. Let&apos;s collaborate to turn your vision into a digital reality
                 that leaves a lasting impact.
               </p>
-              <a className="block btn btn-primary" href="/">
-                Learn More
+              <a
+                href="https://www.linkedin.com/in/john-rysthcraft/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn btn-secondary"
+                type="button"
+              >
+                <i className="mr-1.5 fa-brands fa-linkedin" />
+                Linkedin
               </a>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

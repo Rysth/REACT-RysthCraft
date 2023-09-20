@@ -15,14 +15,14 @@ function HeroSection() {
       className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28 grid lg:grid-cols-2 items-center gap-2 lg:gap-8"
     >
       <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold lg:leading-none">
+        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl lg:leading-none">
           Elevating User Journeys through React Development Expertise
         </h2>
-        <p className="my-5 text-xs sm:text-base text-gray-300 lg:text-xl">
+        <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-xl">
           Welcome to RysthCraft&apos;s Portfolio. I&apos;m John Palacios, a React Developer. Explore
           my web projects here.
         </p>
-        <div className="flex justify-center gap-5 lg:justify-start mt-5">
+        <div className="flex justify-center gap-5 mt-5 lg:justify-start">
           <a
             href="https://github.com/Rysth"
             target="_blank"
@@ -30,7 +30,7 @@ function HeroSection() {
             className="btn btn-primary rounded-2xl"
             type="button"
           >
-            <i className="fa-brands fa-github mr-1" />
+            <i className="fa-brands fa-github mr-1.5" />
             GitHub
           </a>
           <a
@@ -40,12 +40,12 @@ function HeroSection() {
             className="btn btn-secondary"
             type="button"
           >
-            <i className="fa-brands fa-linkedin mr-1" />
+            <i className="fa-brands fa-linkedin mr-1.5" />
             Linkedin
           </a>
         </div>
       </div>
-      <div className="grid place-items-center lg:place-items-end  mt-10 lg:mt-0">
+      <div className="grid mt-10 place-items-center lg:place-items-end lg:mt-0">
         <motion.div
           initial={{ backgroundColor: '#3081ed', scale: 0.95 }}
           animate={{ backgroundColor: '#fb37ff', scale: 1 }}
