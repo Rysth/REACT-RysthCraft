@@ -1,9 +1,19 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import BrandLogo from '../../assets/PNG/brand.png';
 
 function Footer() {
   return (
-    <footer className="body-font">
+    <motion.footer
+      initial={{ y: 100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{
+        duration: 1.5,
+        delay: 1,
+        type: 'spring',
+      }}
+      className="body-font"
+    >
       <div className="container max-w-[1300px] flex flex-col items-center px-4 py-8 mx-auto lg:pt-16 sm:flex-row">
         <a
           className="flex items-center justify-center font-medium text-white title-font md:justify-start"
@@ -43,7 +53,7 @@ function Footer() {
           </a>
         </span>
       </div>
-    </footer>
+    </motion.footer>
   );
 }
 

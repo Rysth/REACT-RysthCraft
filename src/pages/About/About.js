@@ -16,7 +16,7 @@ function About() {
       className="text-gray-300 body-font"
     >
       <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
-        <div className="w-3/4 mx-auto">
+        <div className="w-5/6 mx-auto lg:w-3/4">
           <div className="overflow-hidden rounded-lg h-50">
             <img alt="content" className="object-center h-full" src={BannerImage} />
           </div>
@@ -40,7 +40,7 @@ function About() {
             </div>
             <div className="pt-4 mt-4 text-center border-t border-gray-200 sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l sm:border-t-0 sm:mt-0 sm:text-left">
               <p className="mb-4 text-sm leading-relaxed lg:text-lg">
-                I&apos;m John Palacios, known as RysthCraft, a passionate software developer
+                I&apos;m John Palacios 😄, known as RysthCraft, a passionate software developer
                 specializing in creating websites and applications using
                 <span className="font-bold">
                   {' '}

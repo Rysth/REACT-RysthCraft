@@ -38,7 +38,7 @@ function ServicesSection() {
       className="container max-w-[1300px] mx-auto text-white p-4 py-12 lg:py-20 lg:pb-32"
     >
       <div className="text-center">
-        <h2 className="text-3xl font-bold lg:text-5xl">Getting Started</h2>
+        <h2 className="text-3xl font-bold lg:text-5xl">Getting Started 🚀</h2>
         <p className="text-sm lg:text-base my-1 lg:my-5 text-gray-300 lg:max-w-[50rem] mx-auto">
           Let&apos;s collaborate to kickstart your web development projects with seamless, dynamic
           solutions.
