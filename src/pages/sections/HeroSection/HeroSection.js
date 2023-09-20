@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import HeroImage from '../../../../assets/PNG/hero/hero.png';
+import HeroImage from '../../../assets/PNG/hero/hero.png';
 
 function HeroSection() {
   return (
