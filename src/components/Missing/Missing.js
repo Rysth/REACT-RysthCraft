@@ -11,7 +11,7 @@ function Missing() {
           </p>
           <p className="mb-4 text-base md:text-base font-light dark:text-gray-300 max-w-[25rem] mx-auto">
             Sorry, we can&apos;t find that project. You&apos;ll find lots to explore on the home
-            page.{' '}
+            page.
           </p>
         </div>
       </div>
