@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Service from '../../../../components/Service/Service';
+import Service from '../../../components/Service/Service';
 
 const servicesData = [
   {

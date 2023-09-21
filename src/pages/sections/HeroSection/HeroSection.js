@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import HeroImage from '../../../../assets/PNG/hero/hero.png';
+import HeroImage from '../../../assets/PNG/hero/hero.png';
 
 function HeroSection() {
   return (
@@ -12,7 +12,7 @@ function HeroSection() {
         delay: 1,
         type: 'spring',
       }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28 grid lg:grid-cols-2 items-center gap-2 lg:gap-8"
+      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-20 grid lg:grid-cols-2 items-center gap-2 lg:gap-8"
     >
       <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
         <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl lg:leading-none">
