@@ -17,8 +17,8 @@ function About() {
     >
       <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
         <div className="w-5/6 mx-auto lg:w-3/4">
-          <div className="overflow-hidden rounded-lg h-50">
-            <img alt="content" className="object-center h-full" src={BannerImage} />
+          <div>
+            <img alt="content" className="object-center rounded-lg" src={BannerImage} />
           </div>
           <div className="flex flex-col mt-10 sm:flex-row">
             <div className="text-center sm:w-1/3 sm:pr-8 sm:py-8">
@@ -56,7 +56,7 @@ function About() {
                 href="https://www.linkedin.com/in/john-rysthcraft/"
                 target="_blank"
                 rel="noreferrer"
-                className="btn btn-secondary"
+                className="inline-block btn btn-secondary"
                 type="button"
               >
                 <i className="mr-1.5 fa-brands fa-linkedin" />
