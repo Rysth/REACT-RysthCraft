@@ -20,7 +20,7 @@ function FeatureSection() {
         <Subtitle text="Featured Projects" />
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
-        {projectsData.map((project) => (
+        {projectsData.slice(0, 4).map((project) => (
           <Card
             key={project.id}
             title={project.title}
