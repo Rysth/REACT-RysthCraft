@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Card from '../../../components/Card/Card';
 import Subtitle from '../../../components/Subtitle/Subtitle';
@@ -16,8 +17,15 @@ function FeatureSection() {
       }}
       className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28"
     >
-      <div className="mb-10">
+      <div className="flex items-center justify-between mb-10">
         <Subtitle text="Featured Projects" />
+        <Link
+          to="/projects"
+          className="text-sm transition md:text-base md:hover:translate-x-2"
+        >
+          See All
+          <i className="ml-2 fa-solid fa-arrow-right" />
+        </Link>
       </div>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
         {projectsData.slice(0, 4).map((project) => (

@@ -19,8 +19,8 @@ function HeroSection() {
           Elevating User Journeys through React Development Expertise
         </h2>
         <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-xl">
-          Welcome to RysthCraft&apos;s Portfolio. I&apos;m John Palacios, a React Developer. Explore
-          my web projects here.
+          Welcome to RysthCraft&apos;s Portfolio. I&apos;m John Palacios, a
+          React Developer. Explore my web projects here.
         </p>
         <div className="flex justify-center gap-5 mt-5 lg:justify-start">
           <a
@@ -54,7 +54,7 @@ function HeroSection() {
             repeat: Infinity,
             repeatType: 'mirror',
           }}
-          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[21rem] lg:w-[32rem]"
+          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[18rem] lg:w-[32rem]"
         >
           <motion.div
             initial={{ opacity: 0.2 }}
@@ -66,7 +66,11 @@ function HeroSection() {
             }}
             className="absolute w-[10rem] h-[10rem] rounded-full bg-[var(--CL-primary-pink)] -top-0 -left-0 lg:-top-16 lg:-left-16 blur-3xl z-10"
           />
-          <img className="w-[100%] rounded-2xl z-50 relative" src={HeroImage} alt="" />
+          <img
+            className="relative z-50 w-full rounded-2xl"
+            src={HeroImage}
+            alt=""
+          />
           <motion.div
             initial={{ opacity: 0.2 }}
             animate={{ opacity: 0.4 }}
