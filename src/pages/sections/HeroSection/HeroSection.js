@@ -18,7 +18,7 @@ function HeroSection() {
       className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-20 grid lg:grid-cols-[55%_1fr] items-center gap-2"
     >
       <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
-        <h2 className="text-4xl font-bold md:text-5xl lg:text-8xl lg:leading-none">
+        <h2 className="text-4xl font-bold md:text-5xl lg:text-8xl lg:leading-none tracking-in-expand">
           {t('elevatingUserJourneys')}
         </h2>
         <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-xl">

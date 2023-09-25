@@ -20,10 +20,10 @@ function NavBar() {
 
   return (
     <motion.div
-      initial={{ y: -200 }}
-      animate={{ y: 0 }}
+      initial={{ translateY: -200 }}
+      animate={{ translateY: 0 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
-      className="sticky top-0 z-50 w-full backdrop-blur-xl"
+      className="backdrop-blur-xl"
     >
       <div className="container max-w-[1300px] mx-auto px-4 py-2 md:py-6 flex flex-wrap justify-between items-center">
         <Link to="/">
@@ -43,7 +43,7 @@ function NavBar() {
             <div className="w-full md:hidden">
               <button
                 type="button"
-                className="flex items-center justify-center w-full gap-1 btn btn-neutral"
+                className="flex items-center justify-center w-full gap-1 btn btn-neutral md:hidden"
                 onClick={handleLanguageChange}
               >
                 {t('language')}

@@ -47,7 +47,7 @@ function Products() {
             type="text"
             name="search"
             id="search"
-            className="w-2/4 p-2 px-3 text-black rounded-lg focus:outline-none"
+            className="w-full p-2 px-3 text-black rounded-lg md:w-2/4 focus:outline-none"
             placeholder={t('projectSearch')}
             onChange={handleSearchBar}
           />

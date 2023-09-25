@@ -15,7 +15,7 @@ function Card(
   const { t } = useTranslation();
 
   return (
-    <div className="w-full">
+    <div className="w-full slide-in-blurred-bottom tracking-in-expand">
       <a href={previewLink} target="_blank" rel="noopener noreferrer">
         <img
           className="object-cover object-center transition-transform rounded-xl md:hover:-translate-y-3 "
