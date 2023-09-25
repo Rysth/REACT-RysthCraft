@@ -6,5 +6,11 @@
   "home": "Inicio",
   "about": "Sobre Mí",
   "projects": "Proyectos",
-  "language": "ESPAÑOL"
+  "language": "ESPAÑOL",
+  "seeAll": "Ver Todos",
+  "featuredProjects": "Proyectos Destacados",
+  "livePreview": "Vista Previa",
+  "watch": "Ver",
+  "techTitle": "Stack Tecnológico 🚀",
+  "techDescription": "Colaboremos para impulsar sus proyectos de desarrollo web con soluciones fluidas y dinámicas."
 }

@@ -6,5 +6,11 @@
   "home": "Home",
   "about": "About",
   "projects": "Projects",
-  "language": "ENGLISH"
+  "language": "ENGLISH",
+  "seeAll": "See All",
+  "featuredProjects": "Featured Projects",
+  "livePreview": "Live Preview",
+  "watch": "Watch",
+  "techTitle": "Tech Stack 🚀",
+  "techDescription": "Let's collaborate to kickstart your web development projects with seamless, dynamic solutions."
 }
