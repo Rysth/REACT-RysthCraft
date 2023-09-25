@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Nav from './Nav/Nav';
 import BrandLogo from '../../assets/PNG/brand.png';
 
 function NavBar() {
+  const { t, i18n } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLanguageChange = () => {
+    const actualLang = i18n.language;
+    if (actualLang === 'es') i18n.changeLanguage('en');
+    if (actualLang === 'en') i18n.changeLanguage('es');
+  };
   const handleMobileMenu = () => setIsOpen(!isOpen);
   const handleNavMenu = () => setIsOpen(false);
 
@@ -21,19 +29,21 @@ function NavBar() {
           <img className="w-24 lg:w-32" src={BrandLogo} alt="" />
         </Link>
         <Nav variant="desktop" handleNavMenu={handleNavMenu} />
-        <button type="button" className="btn md:hidden" onClick={handleMobileMenu}>
-          <i className="fa-solid fa-bars text-2xl" />
+        <button
+          type="button"
+          className="btn md:hidden"
+          onClick={handleMobileMenu}
+        >
+          <i className="text-2xl fa-solid fa-bars" />
         </button>
         {isOpen && <Nav variant="mobile" handleNavMenu={handleNavMenu} />}
-        <a
-          href="https://docs.google.com/document/d/1EPlymsJEe9xrWX4LtRBMx1arWRSH2HSVSXRW73-yZDw/edit?usp=sharing"
+        <button
           type="button"
-          target="_blank"
-          rel="noreferrer"
           className="hidden md:inline-block btn btn-neutral"
+          onClick={handleLanguageChange}
         >
-          See Resume
-        </a>
+          {t('language')}
+        </button>
       </div>
     </motion.div>
   );

@@ -1,8 +1,11 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import HeroImage from '../../../assets/PNG/hero/hero.png';
 
 function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -12,15 +15,14 @@ function HeroSection() {
         delay: 1,
         type: 'spring',
       }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-20 grid lg:grid-cols-2 items-center gap-2 lg:gap-8"
+      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-20 grid lg:grid-cols-[55%_1fr] items-center gap-2"
     >
       <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
-        <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl lg:text-6xl lg:leading-none">
-          Elevating User Journeys through React Development Expertise
+        <h2 className="text-4xl font-bold md:text-5xl lg:text-8xl lg:leading-none">
+          {t('elevatingUserJourneys')}
         </h2>
         <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-xl">
-          Welcome to RysthCraft&apos;s Portfolio. I&apos;m John Palacios, a
-          React Developer. Explore my web projects here.
+          {t('welcomeMessage')}
         </p>
         <div className="flex justify-center gap-5 mt-5 lg:justify-start">
           <a
@@ -31,7 +33,7 @@ function HeroSection() {
             type="button"
           >
             <i className="fa-brands fa-github mr-1.5" />
-            GitHub
+            {t('githubLink')}
           </a>
           <a
             href="https://www.linkedin.com/in/john-rysthcraft/"
@@ -41,7 +43,7 @@ function HeroSection() {
             type="button"
           >
             <i className="fa-brands fa-linkedin mr-1.5" />
-            Linkedin
+            {t('linkedinLink')}
           </a>
         </div>
       </div>
