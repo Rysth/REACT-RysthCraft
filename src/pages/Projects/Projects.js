@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import Card from '../../components/Card/Card';
 import Subtitle from '../../components/Subtitle/Subtitle';
@@ -6,6 +7,8 @@ import projectsData from '../../utils/ProjectData';
 import Missing from '../../components/Missing/Missing';
 
 function Products() {
+  const { t } = useTranslation();
+
   const [filteredArray, setfilteredArray] = useState(projectsData);
 
   const handleSearchBar = (e) => {
@@ -39,13 +42,13 @@ function Products() {
     >
       <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
         <div className="flex flex-col items-center justify-between gap-3 mb-10 md:flex-row">
-          <Subtitle text="My Projects" />
+          <Subtitle text={t('projectTitle')} />
           <input
             type="text"
             name="search"
             id="search"
-            className="w-2/4 p-2 text-black rounded-lg focus:outline-none"
-            placeholder="Search"
+            className="w-full p-2 px-3 text-black rounded-lg md:w-2/4 focus:outline-none"
+            placeholder={t('projectSearch')}
             onChange={handleSearchBar}
           />
         </div>

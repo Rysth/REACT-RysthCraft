@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 function Card(
   /* prettier-ignore */
@@ -11,8 +12,10 @@ function Card(
     gitHubLink,
   },
 ) {
+  const { t } = useTranslation();
+
   return (
-    <div className="w-full">
+    <div className="w-full slide-in-blurred-bottom tracking-in-expand">
       <a href={previewLink} target="_blank" rel="noopener noreferrer">
         <img
           className="object-cover object-center transition-transform rounded-xl md:hover:-translate-y-3 "
@@ -29,7 +32,7 @@ function Card(
         <li className="flex items-center justify-between text-xs">
           <p>
             <i className="w-3 mr-2 fa-solid fa-star" />
-            Live Preview
+            {t('livePreview')}
           </p>
           <a
             href={previewLink}
@@ -37,7 +40,7 @@ function Card(
             rel="noopener noreferrer"
             className="border btn btn-primary btn-badge"
           >
-            Watch
+            {t('watch')}
           </a>
         </li>
         <li className="flex items-center justify-between text-xs">
@@ -51,7 +54,7 @@ function Card(
             rel="noopener noreferrer"
             className="border btn btn-badge"
           >
-            Watch
+            {t('watch')}
           </a>
         </li>
       </ul>

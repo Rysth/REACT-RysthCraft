@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 function Nav({ variant, handleNavMenu }) {
+  const { t } = useTranslation();
   const index = variant === 'mobile' ? 1 : 0;
   const navClassList = [
     {
@@ -14,7 +16,8 @@ function Nav({ variant, handleNavMenu }) {
     },
     {
       id: 'mobile',
-      navClassList: 'grid px-3 my-3 py-3 basis-full bg-white md:hidden rounded-lg',
+      navClassList:
+        'grid px-3 my-3 py-3 basis-full bg-white md:hidden rounded-lg',
       navLinkClassList: 'text-sm p-2 rounded-md',
     },
   ];
@@ -26,21 +29,29 @@ function Nav({ variant, handleNavMenu }) {
       transition={{ duration: 0.5, ease: 'easeInOut' }}
       className={navClassList[index].navClassList}
     >
-      <NavLink to="/" className={navClassList[index].navLinkClassList} onClick={handleNavMenu}>
-        <i className="fa-solid fa-home w-4 mr-2 text-center md:hidden" />
-        Home
+      <NavLink
+        to="/"
+        className={navClassList[index].navLinkClassList}
+        onClick={handleNavMenu}
+      >
+        <i className="w-4 mr-2 text-center fa-solid fa-home md:hidden" />
+        {t('home')}
       </NavLink>
-      <NavLink to="/about" className={navClassList[index].navLinkClassList} onClick={handleNavMenu}>
-        <i className="fa-solid fa-user w-4 mr-2 text-center md:hidden" />
-        About
+      <NavLink
+        to="/about"
+        className={navClassList[index].navLinkClassList}
+        onClick={handleNavMenu}
+      >
+        <i className="w-4 mr-2 text-center fa-solid fa-user md:hidden" />
+        {t('about')}
       </NavLink>
       <NavLink
         to="/projects"
         className={navClassList[index].navLinkClassList}
         onClick={handleNavMenu}
       >
-        <i className="fa-solid fa-star w-4 mr-2 text-center md:hidden" />
-        Projects
+        <i className="w-4 mr-2 text-center fa-solid fa-star md:hidden" />
+        {t('projects')}
       </NavLink>
     </motion.nav>
   );

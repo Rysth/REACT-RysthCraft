@@ -1,4 +1,5 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Card from '../../../components/Card/Card';
@@ -6,6 +7,8 @@ import Subtitle from '../../../components/Subtitle/Subtitle';
 import projectsData from '../../../utils/ProjectData';
 
 function FeatureSection() {
+  const { t } = useTranslation();
+
   return (
     <motion.div
       initial={{ y: 100, opacity: 0 }}
@@ -18,12 +21,12 @@ function FeatureSection() {
       className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28"
     >
       <div className="flex items-center justify-between mb-10">
-        <Subtitle text="Featured Projects" />
+        <Subtitle text={t('featuredProjects')} />
         <Link
           to="/projects"
           className="text-sm transition md:text-base md:hover:translate-x-2"
         >
-          See All
+          {t('seeAll')}
           <i className="ml-2 fa-solid fa-arrow-right" />
         </Link>
       </div>
