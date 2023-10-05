@@ -30,7 +30,7 @@ function FeatureSection() {
           <i className="ml-2 fa-solid fa-arrow-right" />
         </Link>
       </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
         {projectsData.slice(0, 4).map((project) => (
           <Card
             key={project.id}
