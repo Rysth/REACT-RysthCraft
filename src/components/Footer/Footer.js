@@ -14,7 +14,7 @@ function Footer() {
       }}
       className="mt-auto bg-[var(--CL-primary-dark)] body-font"
     >
-      <div className="container max-w-[1300px] flex flex-col items-center px-4 py-8 mx-auto lg:pt-16 sm:flex-row">
+      <div className="container flex flex-col items-center max-w-screen-xl px-4 py-8 mx-auto lg:pt-16 sm:flex-row">
         <a
           className="flex items-center justify-center font-medium text-white title-font md:justify-start"
           href="/"

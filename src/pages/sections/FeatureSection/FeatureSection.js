@@ -18,7 +18,7 @@ function FeatureSection() {
         delay: 1,
         type: 'spring',
       }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28"
+      className="container max-w-screen-xl p-4 py-16 mx-auto text-white lg:py-28"
     >
       <div className="flex items-center justify-between mb-10">
         <Subtitle text={t('featuredProjects')} />

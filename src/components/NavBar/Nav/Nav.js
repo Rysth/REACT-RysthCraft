@@ -12,13 +12,13 @@ function Nav({ variant, handleNavMenu }) {
       id: 'desktop',
       navClassList: 'hidden flex-1 justify-center md:flex text-white gap-5',
       navLinkClassList:
-        'text-sm p-2 rounded-md md:hover:scale-110 transition-transform duration-150 uppercase font-bold',
+        'text-xs p-2 rounded-md md:hover:scale-110 transition-transform duration-150 uppercase font-bold',
     },
     {
       id: 'mobile',
       navClassList:
         'grid px-3 my-3 py-3 basis-full bg-white md:hidden rounded-lg',
-      navLinkClassList: 'text-sm p-2 rounded-md',
+      navLinkClassList: 'text-xs p-2 rounded-md',
     },
   ];
 

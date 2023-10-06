@@ -1,5 +1,6 @@
 import React from '../assets/SVG/react.svg';
 import TailwindCSS from '../assets/SVG/tailwind.svg';
+import Ruby from '../assets/SVG/ruby.svg';
 import RubyOnRails from '../assets/SVG/rails.svg';
 
 const servicesData = [
@@ -16,6 +17,11 @@ const servicesData = [
   },
   {
     id: '3',
+    icon: Ruby,
+    text: 'Ruby',
+  },
+  {
+    id: '4',
     icon: RubyOnRails,
     text: 'Ruby on Rails',
   },
