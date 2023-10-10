@@ -7,16 +7,7 @@ function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-        type: 'spring',
-      }}
-      className="container grid items-center max-w-screen-xl gap-2 p-4 py-16 mx-auto text-white lg:py-20 md:grid-cols-2"
-    >
+    <div className="container grid items-center max-w-screen-xl gap-2 p-4 py-16 mx-auto text-white lg:py-20 md:grid-cols-2">
       <div className="text-center md:text-left max-w-[35rem] mx-auto md:max-w-full lg:mx-0">
         <h2 className="text-4xl font-bold md:text-6xl lg:text-7xl xl:text-8xl lg:leading-none">
           {t('elevatingUserJourneys')}
@@ -85,7 +76,7 @@ function HeroSection() {
           />
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { motion } from 'framer-motion';
 import Service from '../../../components/Service/Service';
 import servicesData from '../../../utils/services';
 
@@ -8,16 +7,7 @@ function ServicesSection() {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-        type: 'spring',
-      }}
-      className="container max-w-screen-xl px-4 py-12 mx-auto text-white lg:py-20 lg:pb-28"
-    >
+    <div className="container max-w-screen-xl px-4 py-12 mx-auto text-white lg:py-20 lg:pb-28">
       <div className="text-center">
         <h2 className="text-3xl font-bold lg:text-5xl"> {t('techTitle')}</h2>
         <p className="text-sm lg:text-base my-1 lg:my-5 text-gray-300 md:max-w-[30rem] mx-auto">
@@ -32,7 +22,7 @@ function ServicesSection() {
           ))}
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 
