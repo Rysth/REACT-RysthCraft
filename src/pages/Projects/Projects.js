@@ -40,7 +40,7 @@ function Products() {
       }}
       className="text-white"
     >
-      <div className="container max-w-[1300px] flex flex-col px-4 py-10 md:py-16 mx-auto">
+      <div className="container flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:py-16">
         <div className="flex flex-col items-center justify-between gap-3 mb-10 md:flex-row">
           <Subtitle text={t('projectTitle')} />
           <input

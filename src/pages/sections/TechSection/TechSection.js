@@ -17,8 +17,12 @@ function ServicesSection() {
       <div className="relative">
         <hr className="h-20 bg-gradient-to-bl from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] absolute top-2/4 lg:top-6 w-full z-40 blur-3xl opacity-30" />
         <div className="relative z-50 grid grid-cols-2 gap-5 mt-16 md:grid-cols-4">
-          {technologies.map((service) => (
-            <Tech key={service.id} icon={service.icon} text={service.text} />
+          {technologies.map((technology) => (
+            <Tech
+              key={technology.id}
+              icon={technology.icon}
+              text={technology.text}
+            />
           ))}
         </div>
       </div>

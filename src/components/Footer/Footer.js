@@ -1,79 +1,51 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import BrandLogo from '../../assets/PNG/brand.png';
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <motion.footer
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
-        duration: 1.5,
+        duration: 1.25,
         delay: 1,
         type: 'spring',
       }}
       className="mt-auto bg-[var(--CL-primary-dark)] body-font fade-in"
     >
-      <div className="container flex flex-col items-center max-w-screen-xl px-4 py-8 mx-auto lg:pt-32 sm:flex-row">
+      <div className="container flex flex-col items-center max-w-screen-xl px-4 py-8 mx-auto lg:pt-24 sm:flex-row">
         <div className="w-full text-white">
-          <div className="grid md:grid-cols-[1fr_65%] gap-10">
-            <a href="/" rel="noopener noreferrer">
+          <div className="grid lg:grid-cols-[1fr_60%] gap-10">
+            <Link to="/" rel="noopener noreferrer">
               <img
                 src={BrandLogo}
                 className="w-48 mx-auto sm:w-72 lg:w-full"
                 alt=""
               />
-            </a>
-            <div className="flex flex-col justify-around gap-8 text-center sm:gap-20 md:text-left md:justify-end sm:flex-row lg:gap-28">
+            </Link>
+            <div className="flex flex-col justify-around gap-8 text-center sm:gap-20 md:text-left lg:justify-end sm:flex-row ">
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
                 <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
-                  Marketplace
+                  RysthCraft
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
+                  <Link
+                    to="/"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
-                    Home
-                  </a>
-                </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block transition-transform lg:hover:translate-x-1"
-                  >
-                    Activity
-                  </a>
-                </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block transition-transform lg:hover:translate-x-1"
-                  >
-                    Discover
-                  </a>
-                </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block transition-transform lg:hover:translate-x-1"
-                  >
-                    Learn More
-                  </a>
+                    {t('home')}
+                  </Link>
                 </li>
               </ul>
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
                 <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
-                  Company
+                  {t('quickAccess')}
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <Link
@@ -81,7 +53,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
-                    About
+                    {t('about')}
                   </Link>
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
@@ -90,13 +62,13 @@ function Footer() {
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
-                    Portfolio
+                    {t('projects')}
                   </Link>
                 </li>
               </ul>
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
                 <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
-                  Contact
+                  {t('contacts')}
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
@@ -131,7 +103,6 @@ function Footer() {
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
                     href="mailto:johnpalacios.t@gmail.com"
-                    target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
