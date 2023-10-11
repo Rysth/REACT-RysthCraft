@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import Card from '../../components/Card/Card';
-import Subtitle from '../../components/Subtitle/Subtitle';
-import projectsData from '../../utils/ProjectData';
 import Missing from '../../components/Missing/Missing';
+import Subtitle from '../../components/Subtitle/Subtitle';
+import Card from '../../components/Card/Card';
+import projects from '../../utils/projects';
 
 function Products() {
   const { t } = useTranslation();
 
-  const [filteredArray, setfilteredArray] = useState(projectsData);
+  const [filteredArray, setfilteredArray] = useState(projects);
 
   const handleSearchBar = (e) => {
     const search = e.target.value.trim().toUpperCase();
     if (search) {
       if (filteredArray.length === 0) {
-        setfilteredArray(projectsData);
+        setfilteredArray(projects);
       }
-      const filteredData = projectsData.filter((project) => {
+      const filteredData = projects.filter((project) => {
         const title = project.title.toUpperCase();
         const technology = project.technology.toUpperCase();
 
@@ -25,13 +25,13 @@ function Products() {
       });
       setfilteredArray(filteredData);
     } else {
-      setfilteredArray(projectsData);
+      setfilteredArray(projects);
     }
   };
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
+      initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
         duration: 1,

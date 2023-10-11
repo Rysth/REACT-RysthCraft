@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import Card from '../../../components/Card/Card';
 import Subtitle from '../../../components/Subtitle/Subtitle';
-import projectsData from '../../../utils/ProjectData';
+import projects from '../../../utils/projects';
 
 function FeatureSection() {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ function FeatureSection() {
         </Link>
       </div>
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
-        {projectsData.slice(0, 4).map((project) => (
+        {projects.slice(0, 4).map((project) => (
           <Card
             key={project.id}
             title={project.title}

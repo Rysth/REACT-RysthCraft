@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import BrandLogo from '../../assets/PNG/brand.png';
 
 function Footer() {
@@ -75,34 +76,22 @@ function Footer() {
                   Company
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
+                  <Link
+                    to="/about"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
-                    About Us
-                  </a>
+                    About
+                  </Link>
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block transition-transform lg:hover:translate-x-1"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="/"
-                    target="_blank"
+                  <Link
+                    to="/projects"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
                     Portfolio
-                  </a>
+                  </Link>
                 </li>
               </ul>
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
@@ -111,7 +100,7 @@ function Footer() {
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
-                    href="/"
+                    href="https://www.instagram.com/rysthcraft/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
@@ -121,7 +110,7 @@ function Footer() {
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
-                    href="/"
+                    href="https://www.linkedin.com/in/john-palacios-rysthcraft/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
@@ -131,7 +120,7 @@ function Footer() {
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
-                    href="/"
+                    href="https://github.com/Rysth"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
@@ -141,7 +130,7 @@ function Footer() {
                 </li>
                 <li className="text-base font-light tracking-wider text-gray-300 ">
                   <a
-                    href="/"
+                    href="mailto:johnpalacios.t@gmail.com"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"

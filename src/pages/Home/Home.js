@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import HeroSection from '../sections/HeroSection/HeroSection';
 import FeatureSection from '../sections/FeatureSection/FeatureSection';
-import ServicesSection from '../sections/ServicesSection/ServicesSection';
+import TechSection from '../sections/TechSection/TechSection';
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
     >
       <HeroSection />
       <FeatureSection />
-      <ServicesSection />
+      <TechSection />
     </motion.div>
   );
 }
