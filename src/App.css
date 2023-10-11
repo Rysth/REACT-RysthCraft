@@ -39,11 +39,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 body {
   font-family: var(--FF-poppins);
   background-color: var(--CL-primary-dark);
@@ -83,19 +78,19 @@ select {
 /* Button Styles */
 
 .btn {
-  @apply py-3 text-xs text-center text-white transition duration-150 rounded-lg md:text-sm md:hover:text-black active:scale-90;
+  @apply py-2.5 text-xs text-center text-white transition duration-150 rounded-lg md:text-sm md:hover:text-black active:scale-90;
 }
 
 .btn-neutral {
-  @apply px-3 text-white border border-white md:hover:bg-white;
+  @apply px-2 text-white border border-white md:hover:bg-white;
 }
 
 .btn-primary {
-  @apply w-32 md:w-40 bg-gradient-to-r from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] md:text-lg md:hover:from-white md:hover:to-white;
+  @apply w-32 md:w-36 bg-gradient-to-r from-[var(--CL-primary-blue)] to-[var(--CL-primary-purple)] md:text-lg md:hover:from-white md:hover:to-white;
 }
 
 .btn-secondary {
-  @apply w-32 text-white border border-white md:w-40 md:text-lg md:hover:bg-white;
+  @apply w-32 text-white border border-white md:w-36 md:text-lg md:hover:bg-white;
 }
 
 .btn-badge {
@@ -107,7 +102,9 @@ select {
   -webkit-animation:
     tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1)
     1.5s both;
-  animation: tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.5s both;
+  animation:
+    tracking-in-expand 1s cubic-bezier(0.215, 0.61, 0.355, 1) 1.25s
+    both;
 }
 
 @-webkit-keyframes tracking-in-expand {

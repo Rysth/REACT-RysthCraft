@@ -13,8 +13,10 @@
   "watch": "Ver",
   "techTitle": "Stack Tecnológico 🚀",
   "techDescription": "Colaboremos para impulsar sus proyectos de desarrollo web con soluciones fluidas y dinámicas.",
-  "aboutTech": "Desarrollador de Software | Tecnologías Front-End | Creando Experiencias Web Atractivas | React/Astro/TailwindCSS",
-  "aboutDescription": "Soy John Palacios 😄, conocido como RysthCraft, un apasionado desarrollador de software especializado en la creación de sitios web y aplicaciones utilizando React, Astro, TailwindCSS y Strapi. Con un enfoque en soluciones innovadoras y código limpio y eficiente, estoy dedicado a dar vida a tus ideas digitales, garantizando experiencias de usuario sin problemas y visuales impresionantes. Colaboremos para convertir tu visión en una realidad digital que deje una huella duradera.",
+  "aboutTech": "Desarrollador de Software | Tecnologías Front-End | Creando Experiencias Web Atractivas | React TailwindCSS | Ruby RubyOnRails",
+  "aboutDescription": "Soy John Palacios 😄, conocido como RysthCraft, un apasionado desarrollador de software especializado en la creación de sitios web y aplicaciones utilizando React, TailwindCSS, Ruby y Ruby on Rails. Con un enfoque en soluciones innovadoras y código limpio y eficiente, estoy dedicado a dar vida a tus ideas digitales, garantizando experiencias de usuario sin problemas y visuales impresionantes. Colaboremos para convertir tu visión en una realidad digital que deje una huella duradera.",
   "projectTitle": "Mis Proyectos",
-  "projectSearch": "Buscar.."
+  "projectSearch": "Buscar..",
+  "quickAccess": "Acceso Rápido",
+  "contacts": "Contactos"
 }

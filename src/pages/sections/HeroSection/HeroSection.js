@@ -7,24 +7,15 @@ function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-        type: 'spring',
-      }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-20 grid lg:grid-cols-[55%_1fr] items-center gap-2"
-    >
-      <div className="text-center lg:text-left max-w-[35rem] mx-auto lg:max-w-full lg:mx-0">
-        <h2 className="text-4xl font-bold md:text-5xl lg:text-8xl lg:leading-none tracking-in-expand">
+    <div className="container grid items-center max-w-screen-xl gap-2 p-4 py-16 mx-auto text-white lg:py-20 md:grid-cols-2">
+      <div className="text-center md:text-left max-w-[35rem] mx-auto md:max-w-full lg:mx-0">
+        <h2 className="text-4xl font-bold md:text-6xl lg:text-7xl xl:text-8xl lg:leading-none">
           {t('elevatingUserJourneys')}
         </h2>
-        <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-xl">
+        <p className="my-5 text-xs text-gray-300 sm:text-base lg:text-lg">
           {t('welcomeMessage')}
         </p>
-        <div className="flex justify-center gap-5 mt-5 lg:justify-start">
+        <div className="flex justify-center gap-5 mt-5 md:justify-start">
           <a
             href="https://github.com/Rysth"
             target="_blank"
@@ -47,7 +38,7 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="grid mt-10 place-items-center lg:place-items-end lg:mt-0">
+      <div className="grid mt-10 place-items-center md:place-items-end lg:mt-0">
         <motion.div
           initial={{ backgroundColor: '#3081ed', scale: 0.95 }}
           animate={{ backgroundColor: '#fb37ff', scale: 1 }}
@@ -56,7 +47,7 @@ function HeroSection() {
             repeat: Infinity,
             repeatType: 'mirror',
           }}
-          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[18rem] lg:w-[32rem]"
+          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[18rem] md:w-[24rem] lg:w-[30rem]"
         >
           <motion.div
             initial={{ opacity: 0.2 }}
@@ -85,7 +76,7 @@ function HeroSection() {
           />
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

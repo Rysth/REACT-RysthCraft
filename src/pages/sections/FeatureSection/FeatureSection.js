@@ -1,25 +1,15 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
 import Card from '../../../components/Card/Card';
 import Subtitle from '../../../components/Subtitle/Subtitle';
-import projectsData from '../../../utils/ProjectData';
+import projects from '../../../utils/projects';
 
 function FeatureSection() {
   const { t } = useTranslation();
 
   return (
-    <motion.div
-      initial={{ y: 100, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{
-        duration: 1.5,
-        delay: 1,
-        type: 'spring',
-      }}
-      className="container max-w-[1300px] mx-auto text-white p-4 py-16 lg:py-28"
-    >
+    <div className="container max-w-screen-xl p-4 py-16 mx-auto text-white lg:py-28">
       <div className="flex items-center justify-between mb-10">
         <Subtitle text={t('featuredProjects')} />
         <Link
@@ -30,8 +20,8 @@ function FeatureSection() {
           <i className="ml-2 fa-solid fa-arrow-right" />
         </Link>
       </div>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
-        {projectsData.slice(0, 4).map((project) => (
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
+        {projects.slice(0, 4).map((project) => (
           <Card
             key={project.id}
             title={project.title}
@@ -42,7 +32,7 @@ function FeatureSection() {
           />
         ))}
       </div>
-    </motion.div>
+    </div>
   );
 }
 

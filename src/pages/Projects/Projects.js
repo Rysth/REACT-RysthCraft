@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import Card from '../../components/Card/Card';
-import Subtitle from '../../components/Subtitle/Subtitle';
-import projectsData from '../../utils/ProjectData';
 import Missing from '../../components/Missing/Missing';
+import Subtitle from '../../components/Subtitle/Subtitle';
+import Card from '../../components/Card/Card';
+import projects from '../../utils/projects';
 
 function Products() {
   const { t } = useTranslation();
 
-  const [filteredArray, setfilteredArray] = useState(projectsData);
+  const [filteredArray, setfilteredArray] = useState(projects);
 
   const handleSearchBar = (e) => {
     const search = e.target.value.trim().toUpperCase();
     if (search) {
       if (filteredArray.length === 0) {
-        setfilteredArray(projectsData);
+        setfilteredArray(projects);
       }
-      const filteredData = projectsData.filter((project) => {
+      const filteredData = projects.filter((project) => {
         const title = project.title.toUpperCase();
         const technology = project.technology.toUpperCase();
 
@@ -25,22 +25,22 @@ function Products() {
       });
       setfilteredArray(filteredData);
     } else {
-      setfilteredArray(projectsData);
+      setfilteredArray(projects);
     }
   };
 
   return (
     <motion.div
-      initial={{ y: 100, opacity: 0 }}
+      initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{
-        duration: 1.5,
+        duration: 1,
         delay: 1,
         type: 'spring',
       }}
       className="text-white"
     >
-      <div className="container max-w-[1300px] flex flex-col px-4 py-16 mx-auto">
+      <div className="container flex flex-col max-w-screen-xl px-4 py-10 mx-auto md:py-16">
         <div className="flex flex-col items-center justify-between gap-3 mb-10 md:flex-row">
           <Subtitle text={t('projectTitle')} />
           <input
@@ -53,7 +53,7 @@ function Products() {
           />
         </div>
         {filteredArray.length !== 0 ? (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-8 lg:gap-10">
             {filteredArray.map((project) => (
               <Card
                 key={project.id}

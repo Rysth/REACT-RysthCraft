@@ -23,9 +23,9 @@ function NavBar() {
       initial={{ translateY: -200 }}
       animate={{ translateY: 0 }}
       transition={{ duration: 1, ease: 'easeInOut' }}
-      className="backdrop-blur-xl"
+      className="sticky top-0 z-[2000] backdrop-blur-xl"
     >
-      <div className="container max-w-[1300px] mx-auto px-4 py-2 md:py-6 flex flex-wrap justify-between items-center">
+      <div className="container flex flex-wrap items-center justify-between max-w-screen-xl px-4 py-2 mx-auto md:py-6">
         <Link to="/">
           <img className="w-24 lg:w-32" src={BrandLogo} alt="" />
         </Link>
