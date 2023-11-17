@@ -32,9 +32,11 @@ function NavBar() {
         <Nav variant="desktop" handleNavMenu={handleNavMenu} />
         <button
           type="button"
+          name="toggle"
           className="btn md:hidden"
           onClick={handleMobileMenu}
         >
+          <span className="hidden">Toggle Button</span>
           <i className="text-2xl fa-solid fa-bars" />
         </button>
         {isOpen && (

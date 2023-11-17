@@ -121,6 +121,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <span className="hidden">Instagram</span>
                   <i className="text-2xl fa-brands fa-instagram" />
                 </a>
               </li>
@@ -130,6 +131,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <span className="hidden">LinkedIN</span>
                   <i className="text-2xl fa-brands fa-linkedin" />
                 </a>
               </li>
@@ -139,6 +141,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <span className="hidden">GitHub</span>
                   <i className="text-2xl fa-brands fa-github" />
                 </a>
               </li>
