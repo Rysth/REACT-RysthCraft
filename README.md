@@ -35,15 +35,15 @@
 
 <img src="./preview.png" alt="preview" height="auto" />
 
-[Live Demo]([https://react-digital-project.onrender.com/](https://react-rysthcraft.onrender.com/))
+[Live Demo](<[https://react-digital-project.onrender.com/](https://react-rysthcraft.onrender.com/)>)
 
 ## Getting Started
 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Rysth/REACT-Template.git
-   cd REACT-Template
+   git clone https://github.com/Rysth/REACT-RysthCraft.git
+   cd REACT-RysthCraft
    code .  # To open VS Code Editor
    ```
 
