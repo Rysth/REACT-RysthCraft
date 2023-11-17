@@ -1,144 +1,81 @@
-<a name="readme-top"></a>
+# John Palacios - RysthCraft
 
 <div align="center">
-  <img src="https://rysthcraft.netlify.app/img/LOGO-ONLY.svg" alt="logo" width="140"  height="auto" />
-  <br/>
-  <h3><b>John Palacios - RysthCraft</b></h3>
+  <img src="./banner.png" alt="logo" height="auto" />
 </div>
 
-# 📗 Table of Contents
+## Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Commands](#commands)
-  - [Test](#test)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [About the Project](#about-project)
+- [Built With](#built-with)
+- [Key Features](#key-features)
+- [Live Demo](#live-demo)
+- [Getting Started](#getting-started)
+- [Authors](#authors)
+- [License](#license)
 
-<!-- PROJECT DESCRIPTION -->
+## About the Project
 
-# 📖 REACT PROJECT NAME <a name="about-project"></a>
+- Welcome to RysthCraft's DevPort! Dive into my coding journey, showcasing dynamic React interfaces and robust Rails backends. Explore the realm of software development with me! 💻🚀
 
-- **REACT PROJECT NAME** ...
+## Built With
 
-## 🛠 Built With <a name="built-with"></a>
+- HTML
+- CSS
+- JavaScript
+- React
 
-### Tech Stack <a name="tech-stack"></a>
+## Key Features
 
-- ✅ [HTML](https://www.w3schools.com/html/)
-- ✅ [CSS](https://www.w3schools.com/css/)
-- ✅ [JavaScript](https://www.w3schools.com/js/)
-- ✅ [React](https://react.dev/)
+- 🚀 Feature 1
+- 🌟 Feature 2
+- 🔍 Feature 3
 
-### Key Features <a name="key-features"></a>
+### Live Demo
 
-- 🔰 Feature 1
-- 🔰 Feature 2
-- 🔰 Feature 3
+<img src="./preview.png" alt="preview" height="auto" />
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+[Live Demo]([https://react-digital-project.onrender.com/](https://react-rysthcraft.onrender.com/))
 
-### 🚀 Live Demo <a name="live-demo"></a>
+## Getting Started
 
-- [Live Demo](https://react-bookstore-2060.onrender.com/)
+1. Clone the repository:
 
-## 💻 Getting Started <a name="getting-started"></a>
+   ```bash
+   git clone https://github.com/Rysth/REACT-Template.git
+   cd REACT-Template
+   code .  # To open VS Code Editor
+   ```
 
-To get a local copy up and running, follow these steps.
+2. Customize as needed.
 
-### Setup <a name="setup"></a>
+### Commands
 
-Clone this repository to your desired folder:
+- **npm start:** Run the app in development mode.
+- **npm test:** Launch the test runner.
+- **npm run build:** Build the app for production.
 
-```
-git clone https://github.com/Rysth/REACT-Template.git
-cd REACT-Template
-code . (To open VS Code Editor)
-```
-
-Then, you will change everything you want!
-
-### Commands <a name="commands"></a>
-
-- ✔️ _npm start_:
-  Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
-
-- ✔️ _npm test_:
-  Launches the test runner in the interactive watch mode. See the section about running tests for more information.
-
-- ✔️ _npm run build_:
-  Builds the app for production to the build folder. It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### Linters <a name="test"></a>
-
-In order to follow the Linters you could check them using this:
+### Linters
 
 - CSS Checker:
 
-```
-npx stylelint "**/*.{css,scss}"
-```
+  ```bash
+  npx stylelint "**/*.{css,scss}" --fix
+  ```
 
 - ESLint Checker:
 
-```
-npx eslint "**/*.{js,jsx}"
-```
+  ```bash
+  npx eslint "**/*.{js,jsx}" --fix
+  ```
 
-_Use at the end '--fix' to help you out with any error._
+### Authors
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- John Palacios
 
-## 👥 Authors <a name="authors"></a>
+  - [LinkedIn](https://www.linkedin.com/in/john-rysthcraft/)
+  - [GitHub](https://github.com/Rysth)
 
-👤 **John Palacios**
-
-- GitHub: [@rysthcraft](https://github.com/Rysth)
-- Linkedin: [@johnpalacios](https://www.linkedin.com/in/john-rysthcraft/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] Future Feature 1
-- [ ] Future Feature 2
-- [ ] Future Feature 3
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🤝 Contributing <a name="contributing"></a>
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ⭐️ Show your support <a name="support"></a>
-
-If you like this project feel free to watch it and take some features that will enhance your project
-as well.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thank the Microverse Team for reviewing my code and making me a better
-professional.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
+### License
 
 This project is [MIT](./LICENSE.md) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
