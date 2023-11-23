@@ -7,8 +7,8 @@ function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <div className="container grid items-center max-w-screen-xl gap-2 p-4 py-16 mx-auto text-white lg:py-20 md:grid-cols-2">
-      <div className="text-center md:text-left max-w-[35rem] mx-auto md:max-w-full lg:mx-0">
+    <div className="container flex flex-col items-center justify-center max-w-screen-xl px-4 py-16 mx-auto text-white sm:flex-row ">
+      <div className="text-center md:text-left max-w-[30rem] mx-auto md:max-w-[45rem] lg:mx-0 md:pr-16 :pr-32">
         <h2 className="text-4xl font-bold md:text-6xl lg:text-7xl xl:text-8xl lg:leading-none">
           {t('elevatingUserJourneys')}
         </h2>
@@ -38,7 +38,7 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="grid mt-10 place-items-center md:place-items-end lg:mt-0">
+      <div className="mt-10 md:place-items-end lg:mt-0 ">
         <motion.div
           initial={{ backgroundColor: '#3081ed', scale: 0.95 }}
           animate={{ backgroundColor: '#fb37ff', scale: 1 }}
@@ -47,7 +47,7 @@ function HeroSection() {
             repeat: Infinity,
             repeatType: 'mirror',
           }}
-          className="rounded-2xl p-[0.1em] relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] w-[18rem] md:w-[24rem] lg:w-[30rem]"
+          className="rounded-2xl relative bg-gradient-to-tl from-[var(--CL-primary-blue)]  via-transparent to-[var(--CL-primary-purple)] p-1"
         >
           <motion.div
             initial={{ opacity: 0.2 }}
