@@ -16,8 +16,7 @@ function Nav({ variant, handleNavMenu }) {
     },
     {
       id: 'mobile',
-      navClassList:
-        'grid px-3 my-3 py-3 basis-full bg-white md:hidden rounded-lg',
+      navClassList: 'grid p-2 basis-full bg-white md:hidden rounded-lg my-2',
       navLinkClassList: 'text-xs p-2 rounded-md',
     },
   ];
