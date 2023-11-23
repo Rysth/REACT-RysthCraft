@@ -24,16 +24,16 @@ function Footer() {
             <Link to="/" rel="noopener noreferrer">
               <img
                 src={BrandLogo}
-                className="w-48 mx-auto sm:w-72 lg:w-full"
-                alt=""
+                className="w-48 mx-auto lg:mx-0 sm:w-72 lg:w-96"
+                alt="RysthCraft brand"
               />
             </Link>
-            <div className="flex flex-col justify-around gap-8 text-center sm:gap-20 md:text-left lg:justify-end sm:flex-row ">
+            <div className="flex flex-col justify-around gap-8 text-center sm:gap-20 lg:gap-32 md:text-left lg:justify-end sm:flex-row ">
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
-                <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
+                <li className="mb-2 text-lg font-bold md:text-2xl ">
                   RysthCraft
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <Link
                     to="/"
                     rel="noopener noreferrer"
@@ -44,10 +44,10 @@ function Footer() {
                 </li>
               </ul>
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
-                <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
+                <li className="mb-2 text-lg font-bold md:text-2xl ">
                   {t('quickAccess')}
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <Link
                     to="/about"
                     rel="noopener noreferrer"
@@ -56,7 +56,7 @@ function Footer() {
                     {t('about')}
                   </Link>
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <Link
                     to="/projects"
                     rel="noopener noreferrer"
@@ -67,20 +67,10 @@ function Footer() {
                 </li>
               </ul>
               <ul className="flex flex-col gap-3 p-0 lg:gap-6">
-                <li className="mb-2 text-lg font-bold md:text-2xl lg:text-3xl">
+                <li className="mb-2 text-lg font-bold md:text-2xl ">
                   {t('contacts')}
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
-                  <a
-                    href="https://www.instagram.com/rysthcraft/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block transition-transform lg:hover:translate-x-1"
-                  >
-                    Instagram
-                  </a>
-                </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <a
                     href="https://www.linkedin.com/in/john-palacios-rysthcraft/"
                     target="_blank"
@@ -90,7 +80,7 @@ function Footer() {
                     LinkedIn
                   </a>
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <a
                     href="https://github.com/Rysth"
                     target="_blank"
@@ -100,13 +90,13 @@ function Footer() {
                     GitHub
                   </a>
                 </li>
-                <li className="text-base font-light tracking-wider text-gray-300 ">
+                <li className="text-sm font-light tracking-wider text-gray-300 ">
                   <a
                     href="mailto:johnpalacios.t@gmail.com"
                     rel="noopener noreferrer"
                     className="inline-block transition-transform lg:hover:translate-x-1"
                   >
-                    Email
+                    Gmail
                   </a>
                 </li>
               </ul>
@@ -146,7 +136,7 @@ function Footer() {
                 </a>
               </li>
             </ul>
-            <p>Copyright RysthCraft | 2023</p>
+            <p className="text-sm">Copyright RysthCraft | 2023</p>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 {
   "elevatingUserJourneys": "Designing Professional Websites",
-  "welcomeMessage": "Welcome to RysthCraft's Portfolio. I'm John Palacios, a React Developer, weaving digital sites with Astro and Tailwind. Explore my web wizardry here.",
+  "welcomeMessage": "Welcome to RysthCraft's Portfolio. I'm John Palacios, a Software Developer, weaving digital sites with React, TailwindCSS and Ruby on Rails.",
   "githubLink": "GitHub",
   "linkedinLink": "LinkedIn",
   "home": "Home",
@@ -13,8 +13,8 @@
   "watch": "Watch",
   "techTitle": "Tech Stack 🚀",
   "techDescription": "Let's collaborate to kickstart your web development projects with seamless, dynamic solutions.",
-  "aboutTech": "Software Developer | Front-End Technologies | Crafting Engaging Web Experiences | React TailwindCSS | Ruby RubyOnRails",
-  "aboutDescription": "I'm John Palacios 😄, known as RysthCraft, a passionate software developer specializing in creating websites and applications using React, TailwindCSS, Ruby, and Ruby on Rails. With a focus on innovative solutions and clean, efficient code, I'm dedicated to bringing your digital ideas to life, ensuring seamless user experiences and stunning visuals. Let's collaborate to turn your vision into a digital reality that leaves a lasting impact.",
+  "aboutTech": "Software Developer | React | TailwindCSS | Ruby on Rails",
+  "aboutDescription": "I'm John Palacios, known as RysthCraft, a passionate software developer specializing in creating websites and applications using React, TailwindCSS, and Ruby on Rails. With a focus on innovative solutions and clean, efficient code, I'm dedicated to bringing your digital ideas to life, ensuring seamless user experiences and stunning visuals. Let's collaborate to turn your vision into a digital reality that leaves a lasting impact.",
   "projectTitle": "My Projects",
   "projectSearch": "Search..",
   "quickAccess": "Quick Access",
